@@ -20,13 +20,16 @@ $("#gu_btn").on("click", function () {
             }
             else {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">')
-                $("#result").html('<img src="./img/win.png" alt="勝ち">')
-                $("#tryAgain").html("おかわり！");
-                $(".player").html("");
-                $(".you").html("");
-                $(".table").html("");
-                $(".judgment").html("");
-                $(".chef").html("");
+                setTimeout(() => {
+                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#tryAgain").html("おかわり！");
+                    $(".player").html("");
+                    $(".you").html("");
+                    $(".table").html("");
+                    $(".judgment").html("");
+                    $(".chef").html("");
+                }, 3000);
+                
             }
         }
         else {
@@ -66,13 +69,15 @@ $("#cho_btn").on("click", function () {
             }
             else {
                 $("#judgment3").html('<img class="dish" src="./img/icecream.png" alt="アイスクリーム" width="150px">')
-                $("#result").html('<img src="./img/win.png" alt="勝ち">')
-                $("#tryAgain").html("おかわり！");
-                $(".player").html("");
-                $(".you").html("");
-                $(".table").html("");
-                $(".judgment").html("");
-                $(".chef").html("");
+                setTimeout(() => {
+                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#tryAgain").html("おかわり！");
+                    $(".player").html("");
+                    $(".you").html("");
+                    $(".table").html("");
+                    $(".judgment").html("");
+                    $(".chef").html("");
+                }, 3000);
             }
         }
     }
@@ -103,13 +108,15 @@ $("#par_btn").on("click", function () {
             }
             else {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">');
-                $("#result").html('<img src="./img/win.png" alt="勝ち">');
-                $("#tryAgain").html("おかわり！");
-                $(".player").html("");
-                $(".you").html("");
-                $(".table").html("");
-                $(".judgment").html("");
-                $(".chef").html("");
+                setTimeout(() => {
+                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#tryAgain").html("おかわり！");
+                    $(".player").html("");
+                    $(".you").html("");
+                    $(".table").html("");
+                    $(".judgment").html("");
+                    $(".chef").html("");
+                }, 3000);
             }
         }
         else if (num === 2) {
