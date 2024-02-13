@@ -8,7 +8,6 @@ $("#gu_btn").on("click", function () {
 
         if (num === 1) {
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
-            $("#judgment").html("あいこ");
         }
         else if (num === 2) {
             win ++;
@@ -32,7 +31,6 @@ $("#gu_btn").on("click", function () {
         }
         else {
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
-            $("#judgment").html("負け");
         }
     }
     if (count > 7) {
@@ -53,11 +51,9 @@ $("#cho_btn").on("click", function () {
 
         if (num === 1) {
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
-            $("#judgment").html("負け");
         }
         else if (num === 2) {
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
-            $("#judgment").html("あいこ");
         }
         else {
             win ++;
@@ -118,11 +114,9 @@ $("#par_btn").on("click", function () {
         }
         else if (num === 2) {
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
-            $("#judgment").html("負け");
         }
         else {
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
-            $("#judgment").html("あいこ");
         }
     }
     if (count > 7) {
