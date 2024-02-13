@@ -75,16 +75,16 @@ li{
 }
 #judgment1{
     position: absolute;
-    top: 42%;
-    left: 2%;
+    top: 43%;
+    left:0.5%;
     padding-left: 700px;
     padding-right: 40px;
     /* padding-top: 160px; */
 }
 #judgment2 {
     position: absolute;
-    top: 33%;
-    left: 47%;
+    top: 35%;
+    left: 46%;
     padding-left: 30px;
     padding-right: 30px;
 }
