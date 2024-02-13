@@ -1,4 +1,4 @@
-// let count = 0;
+let count = 0;
 let win = 0;
 
 $("#gu_btn").on("click", function () {
@@ -130,7 +130,8 @@ $("#par_btn").on("click", function () {
     }
 })
 
-$("#tryAgain").on("click", function(){
-    count = 0;
-    console.log({count});
-})
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("btn").addEventListener("click", function(){
+    window.location.reload();
+    })
+});
