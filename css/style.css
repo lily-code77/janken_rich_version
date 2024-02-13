@@ -1,0 +1,96 @@
+body {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.rule{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.player{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+ul{
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: right;
+}
+li{
+    display: table-cell;
+    cursor: grab;
+}
+.you{
+    display: flex;
+}
+.waitingBoy{
+    border-radius: 30%;
+    z-index: 2;
+}
+#gu_btn{
+    padding-right: 100px;
+    padding-top: 65px;
+}
+#cho_btn{
+    padding-right: 120px;
+}
+#par_btn{
+    padding-right: 125px;
+}
+/* .relative{
+    position: relative;
+}
+.salad{
+    position: absolute;
+    right: 1400px;
+    bottom: 30px;
+} */
+
+.table{
+    padding-top: 20px;
+    padding-left: 370px;
+    padding-bottom: 50px;
+}
+.tableImg{
+    border-radius: 20%;
+    /* z-index: 1; */
+}
+.judgment{
+    display: flex;
+}
+#judgment1{
+    /* z-index: 2; */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 160px;
+}
+#judgment2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#judgment3 {
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-top: 160px;
+}
+.chef{
+    display: flex;
+}
+.cookingChef{
+    border-radius: 30%;
+}
+#pc_hands{
+    padding-top: 80px;
+    padding-left: 380px;
+}

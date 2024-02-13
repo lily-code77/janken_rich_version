@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>I am hungry</title>
+    <!-- jquery -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">I am hungry</h1>
+        <h2 class="rule">
+            じゃんけん7回戦勝負。
+            あなたが7回中3回勝って、カレーライス、サラダ、アイスクリームを揃えられたら勝ち。
+        </h2>
+    </header>
+        
+    <main>
+        <!-- 背景の写真 -->
+        <!-- <div id="haikei">
+        <img src="./img/haikei.jpeg" alt="">
+        </div> -->
+
+        <!-- あなた -->
+        <section>
+            <h2 class="player">YOU</h2>
+            <div class="you">
+                <!-- あなたの画像 -->
+                <div class="waiting">
+                    <img class="waitingBoy" src="./img/waiting.png" alt="食事を待っている男の子" width="300px">
+                </div>
+                    
+                <!-- あなたのじゃんけんの手 -->
+                <div>
+                    <ul class="youJanken">
+                        <li id="gu_btn"><img src="./img/gu.png" alt="グー" width="180px"></li>
+                        <li id="cho_btn"><img src="./img/choki.png" alt="チョキ" width="180px"></li>
+                        <li id="par_btn"><img src="./img/par.png" alt="パー" width="180px"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative">
+            <!-- ダイニングテーブルの画像 -->
+            <section>
+                <div class="table">
+                    <img class="tableImg" src="./img/table.jpeg" alt="テーブル" width="600px">
+                </div>
+            </section>
+            <!-- 勝ったら料理が一皿ずつimgで出てくる　という関数-->
+            <section>
+                <div class="judgment">
+                    <div id="judgment1">サラダ</div>
+                    <div id="judgment2">カレーライス</div>
+                    <div id="judgment3">アイスクリーム</div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- シェフ -->
+        <section>
+            <h2 class="player">CHEF</h2>
+            <div class="chef">
+                <!-- シェフの画像 -->
+                <div class="cooking">
+                    <img class="cookingChef" src="./img/chef.png" alt="料理をしているシェフ" width="300px">
+                </div>
+                <!-- シェフのじゃんけんの手 -->
+                <div id="pc_hands">なに？</div>
+            </div>
+        </section>
+            
+        <!-- 勝負がついたらWIN/LOSEの大きな（既存の男の子の画像を隠すくらい）imgが出る -->
+        <section>
+            <div id="result">結果</div>
+        </section>
+            
+    </main>
+        
+    <footer>
+        <!-- TRY AGAINのボタンを作る。（ゲームを最初からリセットする） -->
+        <button id="tryAgain" type="button"></button>
+    </footer>
+    <script src="./js/janken.js"></script>        
+</body>
+
+</html>
