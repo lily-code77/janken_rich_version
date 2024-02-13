@@ -23,6 +23,11 @@ $("#gu_btn").on("click", function () {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">')
                 $("#result").html('<img src="./img/win.png" alt="勝ち">')
                 $("#tryAgain").html("おかわり！");
+                $(".player").html("");
+                $(".you").html("");
+                $(".table").html("");
+                $(".judgment").html("");
+                $(".chef").html("");
             }
         }
         else {
@@ -33,6 +38,11 @@ $("#gu_btn").on("click", function () {
     if (count > 7) {
         $("#result").html('<img src="./img/lose.png" alt="負け">');
         $("#tryAgain").html("Try Again");
+        $(".player").html("");
+        $(".you").html("");
+        $(".table").html("");
+        $(".judgment").html("");
+        $(".chef").html("");
     }
 })
 
@@ -62,12 +72,22 @@ $("#cho_btn").on("click", function () {
                 $("#judgment3").html('<img class="dish" src="./img/icecream.png" alt="アイスクリーム" width="150px">')
                 $("#result").html('<img src="./img/win.png" alt="勝ち">')
                 $("#tryAgain").html("おかわり！");
+                $(".player").html("");
+                $(".you").html("");
+                $(".table").html("");
+                $(".judgment").html("");
+                $(".chef").html("");
             }
         }
     }
     if (count > 7) {
         $("#result").html('<img src="./img/lose.png" alt="負け">');
         $("#tryAgain").html("Try Again");
+        $(".player").html("");
+        $(".you").html("");
+        $(".table").html("");
+        $(".judgment").html("");
+        $(".chef").html("");
     }
 })
                 
@@ -89,6 +109,11 @@ $("#par_btn").on("click", function () {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">');
                 $("#result").html('<img src="./img/win.png" alt="勝ち">');
                 $("#tryAgain").html("おかわり！");
+                $(".player").html("");
+                $(".you").html("");
+                $(".table").html("");
+                $(".judgment").html("");
+                $(".chef").html("");
             }
         }
         else if (num === 2) {
@@ -103,5 +128,10 @@ $("#par_btn").on("click", function () {
     if (count > 7) {
         $("#result").html('<img src="./img/lose.png" alt="負け">');
         $("#tryAgain").html("Try Again");
+        $(".player").html("");
+        $(".you").html("");
+        $(".table").html("");
+        $(".judgment").html("");
+        $(".chef").html("");
     }
 })
