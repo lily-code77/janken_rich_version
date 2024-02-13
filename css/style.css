@@ -17,9 +17,10 @@ main {
     margin-bottom: 20px;
 }
 .rule{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 50px;
+    line-height: 35px;
 }
 .player{
     font-size: 70px;

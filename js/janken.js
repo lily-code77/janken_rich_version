@@ -1,4 +1,4 @@
-let count = 0;
+// let count = 0;
 let win = 0;
 
 $("#gu_btn").on("click", function () {
@@ -128,4 +128,9 @@ $("#par_btn").on("click", function () {
         $(".judgment").html("");
         $(".chef").html("");
     }
+})
+
+$("#tryAgain").on("click", function(){
+    count = 0;
+    console.log({count});
 })
