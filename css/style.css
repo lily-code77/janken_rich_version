@@ -38,6 +38,10 @@ li{
     display: table-cell;
     cursor: grab;
 }
+li:hover{
+    background: radial-gradient(rgb(243, 142, 1), bisque);
+    background-size: 100px;
+}
 .player{
     padding-left: 80px;
     color: bisque;
@@ -51,11 +55,11 @@ li{
     border: 0.3rem solid rgb(243, 142, 1);
 }
 #gu_btn{
-    padding-right: 100px;
+    padding-right: 160px;
     padding-top: 65px;
 }
 #cho_btn{
-    padding-right: 120px;
+    padding-right: 160px;
 }
 #par_btn{
     padding-right: 125px;
