@@ -39,8 +39,8 @@ li{
     cursor: grab;
 }
 li:hover{
-    background: radial-gradient(rgb(243, 142, 1), bisque);
-    background-size: 100px;
+    border: solid;
+    border-radius: 50%;
 }
 .player{
     padding-left: 80px;
@@ -63,6 +63,15 @@ li:hover{
 }
 #par_btn{
     padding-right: 125px;
+}
+#gu{
+    border-radius: 75%;
+}
+#choki{
+    border-radius: 75%;
+}
+#par{
+    border-radius: 75%;
 }
 .table{
     padding-top: 20px;
