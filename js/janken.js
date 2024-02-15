@@ -28,7 +28,7 @@ $("#gu_btn").on("click", function () {
                     $(".table").html("");
                     $(".judgment").html("");
                     $(".chef").html("");
-                }, 3000);
+                }, 1000);
                 
             }
         }
@@ -77,7 +77,7 @@ $("#cho_btn").on("click", function () {
                     $(".table").html("");
                     $(".judgment").html("");
                     $(".chef").html("");
-                }, 3000);
+                }, 1000);
             }
         }
     }
@@ -116,7 +116,7 @@ $("#par_btn").on("click", function () {
                     $(".table").html("");
                     $(".judgment").html("");
                     $(".chef").html("");
-                }, 3000);
+                }, 1000);
             }
         }
         else if (num === 2) {
