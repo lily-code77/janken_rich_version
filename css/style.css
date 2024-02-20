@@ -85,13 +85,16 @@ li{
     cursor: grab;
 }
 li:hover{
-    border: solid;
-    border-radius: 50%;
+    /* border: solid;
+    border-radius: 50%; */
+    /* color: #fff; */
+    transform: scale(1.3);
+    transition: 0.3s;
 }
 #gu_btn{
     position: relative;
     z-index: 3;
-    padding-right: 100px;
+    padding-right: 90px;
     padding-top: 65px;
 }
 #cho_btn{
@@ -102,7 +105,7 @@ li:hover{
 #par_btn{
     position: relative;
     z-index: 3;
-    padding-right: 20px;
+    padding-right: 36px;
 }
 #gu{
     border-radius: 75%;
@@ -152,6 +155,36 @@ li:hover{
     /* padding-left: 35px;
     padding-right: 40px;
     padding-top: 160px; */
+}
+@keyframes animateImageSlide {
+
+    /* 開始時点 */
+    0% {
+        transform: translateX(0);
+    }
+
+    /* 中間1 */
+    25% {
+        transform: translateX(200px);
+    }
+
+    /* 中間2 */
+    50% {
+        transform: translateX(0);
+    }
+
+    /* 中間3 */
+    75% {
+        transform: translateX(-200px);
+    }
+
+    /* 終了時点 */
+    100% {
+        transform: translateX(0);
+    }
+}
+#zzz{
+    animation: animateImageSlide 10s infinite ease;
 }
 #pc_hands{
     position: relative;
