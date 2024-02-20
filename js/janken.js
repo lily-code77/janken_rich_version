@@ -2,14 +2,17 @@ let count = 0;
 let win = 0;
 
 $("#gu_btn").on("click", function () {
-    count ++;
-    if (count <= 7) {
+    if (count < 7) {
         let num = Math.ceil(Math.random() * 3);
-
+        
         if (num === 1) {
+            count ++;
+            // console.log(`あいこ：${count}`);
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
         }
         else if (num === 2) {
+            count ++;
+            // console.log(`勝ち：${count}`);
             win ++;
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
             if (win === 1) {
@@ -33,32 +36,39 @@ $("#gu_btn").on("click", function () {
             }
         }
         else {
+            count ++;
+            // console.log(`負け：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
+        }
+        if (count === 7){
+            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            $("#tryAgain").html("Try Again");
+            $(".player").html("");
+            $(".you").html("");
+            $(".table").html("");
+            $(".judgment").html("");
+            $(".chef").html("");
         }
     }
     if (count > 7) {
-        $("#result").html('<img src="./img/lose.png" alt="負け">');
-        $("#tryAgain").html("Try Again");
-        $(".player").html("");
-        $(".you").html("");
-        $(".table").html("");
-        $(".judgment").html("");
-        $(".chef").html("");
+        alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
 
 $("#cho_btn").on("click", function () {
-    count ++;
-    if (count <= 7) {
+    if (count < 7) {
         let num = Math.ceil(Math.random() * 3);
 
         if (num === 1) {
+            count ++;
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
         }
         else if (num === 2) {
+            count ++;
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
         }
         else {
+            count ++;
             win ++;
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
             if (win === 1) {
@@ -80,24 +90,27 @@ $("#cho_btn").on("click", function () {
                 }, 1000);
             }
         }
+        if (count === 7){
+            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            $("#tryAgain").html("Try Again");
+            $(".player").html("");
+            $(".you").html("");
+            $(".table").html("");
+            $(".judgment").html("");
+            $(".chef").html("");
+        }
     }
     if (count > 7) {
-        $("#result").html('<img src="./img/lose.png" alt="負け">');
-        $("#tryAgain").html("Try Again");
-        $(".player").html("");
-        $(".you").html("");
-        $(".table").html("");
-        $(".judgment").html("");
-        $(".chef").html("");
+        alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
                 
 $("#par_btn").on("click", function () {
-    count ++;
-    if (count <= 7) {
+    if (count < 7) {
         let num = Math.ceil(Math.random() * 3);
 
         if (num === 1) {
+            count ++;
             win ++;
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
             if (win === 1) {
@@ -120,25 +133,30 @@ $("#par_btn").on("click", function () {
             }
         }
         else if (num === 2) {
+            count ++;
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
         }
         else {
+            count ++;
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
+        }
+        if (count === 7){
+            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            $("#tryAgain").html("Try Again");
+            $(".player").html("");
+            $(".you").html("");
+            $(".table").html("");
+            $(".judgment").html("");
+            $(".chef").html("");
         }
     }
     if (count > 7) {
-        $("#result").html('<img src="./img/lose.png" alt="負け">');
-        $("#tryAgain").html("Try Again");
-        $(".player").html("");
-        $(".you").html("");
-        $(".table").html("");
-        $(".judgment").html("");
-        $(".chef").html("");
+        alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("btn").addEventListener("click", function(){
-    window.location.reload();
-    })
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.getElementById("btn").addEventListener("click", function(){
+//     window.location.reload();
+//     })
+// });
