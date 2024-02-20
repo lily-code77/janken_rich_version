@@ -4,10 +4,23 @@ body {
     margin-left: auto;
 }
 main {
+    position: relative;
+    z-index: 1;
     background-image: url("../img/haikei.png");
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-size: 100%;
+}
+main::after{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.5;
 }
 .title{
     font-size: 60px;
@@ -22,10 +35,43 @@ main {
     margin-bottom: 50px;
     line-height: 35px;
 }
+#youWord{
+    margin-left: 120px;
+}
+#chefWord{
+    margin-left: 100px;
+}
 .player{
+    position: relative;
+    z-index: 3;
     font-size: 70px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    /* padding-left: 90px; */
+    color: bisque;
+    -webkit-text-stroke: 2px #0e0d0d;
+}
+.you {
+    display: flex;
+}
+.waitingBoy {
+    position: relative;
+    z-index: 3;
+    border-radius: 30%;
+    border: 0.3rem solid rgb(243, 142, 1);
+    margin-left: 30px;
+    /* margin-top: 70px; */
+}
+.chef {
+    display: flex;
+}
+.cookingChef {
+    position: relative;
+    z-index: 3;
+    border-radius: 30%;
+    border: 0.3rem solid rgb(243, 142, 1);
+    margin-left: 30px;
+    /* margin-bottom: 400px; */
 }
 ul{
     padding: 0;
@@ -42,27 +88,21 @@ li:hover{
     border: solid;
     border-radius: 50%;
 }
-.player{
-    padding-left: 80px;
-    color: bisque;
-    -webkit-text-stroke: 1px #0e0d0d;
-}
-.you{
-    display: flex;
-}
-.waitingBoy{
-    border-radius: 30%;
-    border: 0.3rem solid rgb(243, 142, 1);
-}
 #gu_btn{
-    padding-right: 160px;
+    position: relative;
+    z-index: 3;
+    padding-right: 100px;
     padding-top: 65px;
 }
 #cho_btn{
-    padding-right: 160px;
+    position: relative;
+    z-index: 3;
+    padding-right: 60px;
 }
 #par_btn{
-    padding-right: 125px;
+    position: relative;
+    z-index: 3;
+    padding-right: 20px;
 }
 #gu{
     border-radius: 75%;
@@ -75,54 +115,55 @@ li:hover{
 }
 .table{
     padding-top: 20px;
-    padding-left: 650px;
-    padding-bottom: 50px;
+    padding-left: 400px;
+    padding-bottom: 10px;
 }
 .tableImg{
+    position: relative;
+    z-index: 3;
     border-radius: 20%;
     border: 0.3rem solid rgb(243, 142, 1);
-    position: relative;
 }
 .judgment{
     display: flex;
 }
 #judgment1{
+    position: relative;
+    z-index: 3;
     position: absolute;
-    top: 43%;
-    left:0.5%;
-    padding-left: 700px;
-    padding-right: 40px;
-    /* padding-top: 160px; */
+    top: 48%;
+    left:35%;
 }
 #judgment2 {
+    position: relative;
+    z-index: 3;
     position: absolute;
     top: 35%;
-    left: 46%;
-    padding-left: 30px;
-    padding-right: 30px;
+    left: 50%;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 }
 #judgment3 {
+    position: relative;
+    z-index: 3;
     position: absolute;
-    top: 34.6%;
-    left: 55.2%;
-    padding-left: 35px;
+    top: 48%;
+    left: 65%;
+    /* padding-left: 35px;
     padding-right: 40px;
-    padding-top: 160px;
-}
-.chef{
-    display: flex;
-}
-.cookingChef{
-    border-radius: 30%;
-    border: 0.3rem solid rgb(243, 142, 1);
+    padding-top: 160px; */
 }
 #pc_hands{
+    position: relative;
+    z-index: 3;
     padding-top: 80px;
-    padding-left: 740px;
+    padding-left: 390px;
 }
 #result{
-    padding-left: 400px;
-    padding-bottom: 60px;
+    position: relative;
+    z-index: 3;
+    padding-left: 390px;
+    padding-bottom: 20px;
 }
 #tryAgain{
     display: inline-block;
@@ -135,7 +176,7 @@ li:hover{
     box-shadow: rgba(6, 6, 6, 0.3) 0px 15px 35px 5px;
     /* transition: all 0.2s; */
     margin-top: 50px;
-    margin-left: 850px;
+    margin-left: 500px;
 }
 #tryAgain:hover{
     background: #1eb0d1;
