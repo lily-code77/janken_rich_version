@@ -24,7 +24,7 @@ $("#gu_btn").on("click", function () {
             else {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">')
                 setTimeout(() => {
-                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#result").html('<img src="./img/win.png" alt="勝ち" width="500px">');
                     $("#tryAgain").html("おかわり！");
                     $(".player").html("");
                     $(".you").html("");
@@ -41,7 +41,8 @@ $("#gu_btn").on("click", function () {
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
         if (count === 7){
-            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            count ++;
+            $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
             $(".you").html("");
@@ -80,7 +81,7 @@ $("#cho_btn").on("click", function () {
             else {
                 $("#judgment3").html('<img class="dish" src="./img/icecream.png" alt="アイスクリーム" width="150px">')
                 setTimeout(() => {
-                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#result").html('<img src="./img/win.png" alt="勝ち" width="500px">');
                     $("#tryAgain").html("おかわり！");
                     $(".player").html("");
                     $(".you").html("");
@@ -91,7 +92,8 @@ $("#cho_btn").on("click", function () {
             }
         }
         if (count === 7){
-            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            count ++;
+            $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
             $(".you").html("");
@@ -122,7 +124,7 @@ $("#par_btn").on("click", function () {
             else {
                 $("#judgment3").html('<img src="./img/icecream.png" alt="アイスクリーム" width="150px">');
                 setTimeout(() => {
-                    $("#result").html('<img src="./img/win.png" alt="勝ち">');
+                    $("#result").html('<img src="./img/win.png" alt="勝ち" width="500px">');
                     $("#tryAgain").html("おかわり！");
                     $(".player").html("");
                     $(".you").html("");
@@ -141,7 +143,8 @@ $("#par_btn").on("click", function () {
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
         if (count === 7){
-            $("#result").html('<img src="./img/lose.png" alt="負け">');
+            count ++;
+            $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
             $(".you").html("");
