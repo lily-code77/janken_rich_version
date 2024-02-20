@@ -184,6 +184,7 @@ li:hover{
     }
 }
 #zzz{
+    border-radius: 80%;
     animation: animateImageSlide 10s infinite ease;
 }
 #pc_hands{
