@@ -7,12 +7,12 @@ $("#gu_btn").on("click", function () {
         
         if (num === 1) {
             count ++;
-            // console.log(`あいこ：${count}`);
+            console.log(`あいこ：${count}`);
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
         }
         else if (num === 2) {
             count ++;
-            // console.log(`勝ち：${count}`);
+            console.log(`勝ち：${count}`);
             win ++;
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
             if (win === 1) {
@@ -37,7 +37,7 @@ $("#gu_btn").on("click", function () {
         }
         else {
             count ++;
-            // console.log(`負け：${count}`);
+            console.log(`負け：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
         if (count === 7){
@@ -62,15 +62,18 @@ $("#cho_btn").on("click", function () {
 
         if (num === 1) {
             count ++;
+            console.log(`負け：${count}`);
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
         }
         else if (num === 2) {
             count ++;
+            console.log(`あいこ：${count}`);
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
         }
         else {
             count ++;
             win ++;
+            console.log(`勝ち：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
             if (win === 1) {
                 $("#judgment1").html('<img src="./img/salad.png" alt="サラダ" width="150px">')
@@ -114,6 +117,7 @@ $("#par_btn").on("click", function () {
         if (num === 1) {
             count ++;
             win ++;
+            console.log(`勝ち：${count}`);
             $("#pc_hands").html('<img src="./img/gu.png" alt="グー" width="180px">');
             if (win === 1) {
                 $("#judgment1").html('<img src="./img/salad.png" alt="サラダ" width="150px">');
@@ -136,10 +140,12 @@ $("#par_btn").on("click", function () {
         }
         else if (num === 2) {
             count ++;
+            console.log(`負け：${count}`);
             $("#pc_hands").html('<img src="./img/choki.png" alt="チョキ" width="180px">');
         }
         else {
             count ++;
+            console.log(`あいこ：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
         if (count === 7){
