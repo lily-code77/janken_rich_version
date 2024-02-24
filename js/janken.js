@@ -40,8 +40,7 @@ $("#gu_btn").on("click", function () {
             console.log(`負け：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
-        if (count === 7){
-            count ++;
+        if (count === 7 && !(win >= 3)){
             $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
@@ -51,7 +50,7 @@ $("#gu_btn").on("click", function () {
             $(".chef").html("");
         }
     }
-    if (count > 7) {
+    if (count >= 8) {
         alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
@@ -94,8 +93,7 @@ $("#cho_btn").on("click", function () {
                 }, 1000);
             }
         }
-        if (count === 7){
-            count ++;
+        if ((count === 7 && !(win >= 3))){
             $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
@@ -105,7 +103,7 @@ $("#cho_btn").on("click", function () {
             $(".chef").html("");
         }
     }
-    if (count > 7) {
+    if (count >= 8) {
         alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
@@ -148,8 +146,7 @@ $("#par_btn").on("click", function () {
             console.log(`あいこ：${count}`);
             $("#pc_hands").html('<img src="./img/par.png" alt="パー" width="180px">');
         }
-        if (count === 7){
-            count ++;
+        if ((count === 7 && !(win >= 3))){
             $("#result").html('<img src="./img/lose.png" alt="負け" width="500px">');
             $("#tryAgain").html("Try Again");
             $(".player").html("");
@@ -159,7 +156,7 @@ $("#par_btn").on("click", function () {
             $(".chef").html("");
         }
     }
-    if (count > 7) {
+    if (count >= 8) {
         alert("じゃんけんボタンの押しすぎです。Resetボタンを押してください。")
     }
 })
