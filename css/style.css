@@ -210,8 +210,9 @@ li:hover{
     border-radius: 30px;
     box-shadow: rgba(6, 6, 6, 0.3) 0px 15px 35px 5px;
     /* transition: all 0.2s; */
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 500px;
+    margin-bottom: 20px;
 }
 #tryAgain:hover{
     background: #1eb0d1;
