@@ -8,7 +8,7 @@
 　男の子の勝利です。
 
 ## ③DEMO
- https://lily-code77.github.io/kadai02_janken_rich/
+ 
 
 ## ④工夫した点・こだわった点
 - 7回戦の勝負にした。
